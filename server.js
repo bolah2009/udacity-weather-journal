@@ -25,10 +25,27 @@ const listening = port => {
 
 app.listen(port, listening(port));
 
+/**
+ * @description Call back function for GET request the function sends
+ * the projectData object to the response parameter.
+ * @example app.get('/data', getData);
+ *
+ * @param {object} req - The request parameter.
+ * @param {object} res - The response parameter.
+ */
 const getData = (req, res) => {
   res.send(projectData);
 };
 
+/**
+ * @description Call back function for POST request the function gets
+ * a new data from the body property of the req parameter and adds this data
+ * to the projectData then uses the res parameter to send a response.
+ * @example app.post('/post', addData);
+ *
+ * @param {object} req - The request parameter.
+ * @param {object} res - The response parameter.
+ */
 const addData = (req, res) => {
   const { body: newData } = req;
 
