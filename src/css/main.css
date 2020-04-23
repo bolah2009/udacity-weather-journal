@@ -1,0 +1,102 @@
+.container {
+  width: 90%;
+}
+
+.headline {
+  margin: 32px 0;
+}
+
+.form {
+  width: 100%;
+  margin: 16px;
+  padding: 0 15px;
+}
+
+.zip,
+.feelings {
+  width: 100%;
+}
+
+.input {
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  font-weight: 400;
+  width: 100%;
+  padding: 6px 0;
+  line-height: 1.5;
+  color: #333;
+  background: transparent;
+  border-bottom: 1px solid #ccc;
+  font-size: 14px;
+  margin-bottom: 15px;
+  height: 55px;
+}
+
+.label {
+  margin-bottom: 8px;
+  color: #1f1f1f;
+  font-weight: 700;
+}
+
+::placeholder {
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.form-submit {
+  background: #ce3232;
+  border-radius: 0;
+  border: 0;
+  color: #fff;
+  font-weight: 700;
+  font-size: 150%;
+  height: 50px;
+  width: 100%;
+}
+
+.form-submit:hover {
+  background: #292929;
+  color: #fff;
+}
+
+.holder {
+  width: 100%;
+  margin: 16px;
+}
+
+.result {
+  margin: 16px;
+  width: 100%;
+  border: 2px solid #464646;
+}
+
+.data-date,
+.data-temp,
+.data-content {
+  width: 100%;
+  padding: 4px;
+}
+.data-date,
+.data-temp {
+  border-bottom: 2px solid #464646;
+}
+
+.footer {
+  margin-top: 32px;
+  border-top: 2px solid #ccc;
+  padding-top: 32px;
+}
+
+.footer-list {
+  width: 100%;
+}
+
+.footer-list-item {
+  width: 80%;
+  margin-top: 12px;
+}
+
+.social {
+  width: 50%;
+}

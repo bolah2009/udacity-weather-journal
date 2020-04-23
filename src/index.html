@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Journal</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <main id="app" class="d-flex col jc-c ai-c">
+      <h1 class="headline">
+        Weather Journal App
+      </h1>
+
+      <div class="container d-flex col jc-sa row-md">
+        <form id="form" class="form d-flex col  jc-c ai-c" action="#">
+          <div class="d-flex col ai-c zip">
+            <label class="label" for="zip">Enter Zipcode here</label>
+            <input
+              class="input"
+              minlength="3"
+              required
+              type="text"
+              id="zip"
+              placeholder="enter zip code here"
+            />
+          </div>
+
+          <div class="d-flex col ai-c feelings">
+            <label class="label" for="feelings">How are you feeling today?</label>
+            <textarea
+              class="input"
+              id="feelings"
+              name="feelings"
+              placeholder="Enter your feelings here"
+              rows="6"
+              minlength="5"
+              required
+            ></textarea>
+          </div>
+          <button class="form-submit" type="submit" id="form-submit" name="submit" value="submit">
+            Generate
+          </button>
+        </form>
+
+        <section class="holder d-flex col ai-c">
+          <h2 class="title">Most Recent Entry</h2>
+
+          <div class="result" id="entryHolder">
+            <p class="data-date"><span>Date: </span><span class="entry-data" id="date"></span></p>
+            <p class="data-temp">
+              <span>Temperature: </span><span class="entry-data" id="temp"></span>
+            </p>
+            <p class="data-content entry-data" id="content">No content</p>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer class="footer">
+      <ul class="footer-list d-flex col row-md jc-sa ai-c">
+        <li class="footer-list-item jc-c d-flex">
+          <ul class="social d-flex ai-c jc-sa">
+            <li>
+              <a
+                href="https://www.linkedin.com/in/bolah2009/"
+                target="_blank"
+                title="LinkedIn"
+                rel="noopener noreferrer"
+                class="icon-font linkedin"
+              ></a>
+            </li>
+
+            <li>
+              <a
+                href="https://github.com/bolah2009"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="GitHub"
+                class="icon-font github"
+              ></a>
+            </li>
+
+            <li>
+              <a
+                href="http://gitlab.com/bolah2009/"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="GitLab"
+                class="icon-font gitlab d-flex col jc-c"
+              >
+                <svg class="gitlab" width="26px" height="23px" viewBox="0 0 210 194">
+                  <g fill="none" fill-rule="evenodd">
+                    <path class="path_1" d="M105 194l39-119H66l39 119z" />
+                    <path class="path_2" d="M105 194L66 75H12l93 119z" />
+                    <path class="path_3" d="M12 75L1 111c-2 3 0 7 2 9l102 74L12 75z" />
+                    <path class="path_1" d="M12 75h54L43 3c-1-4-6-4-7 0L12 75z" />
+                    <path class="path_2" d="M105 194l39-119h54l-93 119z" />
+                    <path class="path_3" d="M198 75l12 36c1 3-1 7-3 9l-102 74 93-119z" />
+                    <path class="path_1" d="M198 75h-54l23-72c1-4 6-4 8 0l23 72z" />
+                  </g>
+                </svg>
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://twitter.com/bolah2009"
+                target="_blank"
+                title="Twitter"
+                rel="noopener noreferrer"
+                class="icon-font twitter"
+              ></a>
+            </li>
+          </ul>
+        </li>
+        <li class="footer-list-item jc-c ai-c d-flex col">
+          <p>
+            Built with HTML-CSS-JS
+          </p>
+          <p>
+            Source code open sourced at
+            <a
+              href="https://github.com/bolah2009/udacity-weather-journal"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              GitHub</a
+            >
+          </p>
+        </li>
+      </ul>
+    </footer>
+
+    <script src="app.js" type="text/javascript"></script>
+  </body>
+</html>
