@@ -23,6 +23,7 @@
     "stylelint-prettier": "^1.1.1"
   },
   "scripts": {
+    "start": "node server.js",
     "format": "npx prettier  --write '**/*.{css,html,js,json,md.json,yaml,yml}'",
     "format:check": "npx prettier  --check '**/*.{css,html,js,json,md.json,yaml,yml}'",
     "lint": "npx eslint '**/*.js' --fix && npx stylelint '**/*.css' --fix",
